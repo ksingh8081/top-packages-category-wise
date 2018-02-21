@@ -33,7 +33,7 @@ top('database', 5).then(function (list) {
 ```js
 var top = require('top-packages-category-wise');
 top('database', 5, {
-    'fullPackageDetail': true,
+    fullPackageDetail: true,
     criteria: 'quality'
 }).then(function (list) {
     console.log(list);
