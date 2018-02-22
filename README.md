@@ -1,15 +1,16 @@
 
 # top-packages-category-wise
 
-find top npm packages in given category by popularity|maintenance|quality|overall.
+finds top npm packages in given category by popularity|maintenance|quality|overall.
 
-- returs a promise
-- fullfillment value for promise is array of packages
-- default oredering ceriteria is 'popularity'
+- returns a promise
+- fullfillment value for promise is array of package names (default) or array of package objects.
+- default ordering criteria is 'popularity'. Other options are maintenance, quality, and overall.
 - default result size is 10
 
 
-1. top 10 'api' packages
+## Examples
+1.	top 10 'api' packages
 ```js
 var top = require('top-packages-category-wise');
 top('api').then(function (list) {
@@ -19,7 +20,7 @@ top('api').then(function (list) {
 });
 ```
 
-2. top 5 'database' packages
+2.	top 5 'database' packages
 ```js
 var top = require('top-packages-category-wise');
 top('database', 5).then(function (list) {
@@ -29,7 +30,7 @@ top('database', 5).then(function (list) {
 });
 ```
 
-3. top 5 'database' packages with full package detail
+3.	top 5 'database' packages with full package detail
 ```js
 var top = require('top-packages-category-wise');
 top('database', 5, {

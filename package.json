@@ -1,7 +1,7 @@
 {
   "name": "top-packages-category-wise",
-  "version": "1.0.0",
-  "description": "find top npm packages by popularity in given category",
+  "version": "1.0.1",
+  "description": "finds top npm packages by popularity in given category",
   "main": "index.js",
   "scripts": {
     "test": "mocha"
@@ -12,7 +12,8 @@
   },
   "keywords": [
     "search",
-    "top"
+    "top",
+    "packages"
   ],
   "author": "ksingh8081@gmail.com",
   "license": "ISC",
